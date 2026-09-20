@@ -1,0 +1,18 @@
+firewall:
+  input_policy: DROP
+
+  rules:
+    - protocol: tcp
+      port: 22
+      allowed: false
+
+    - protocol: tcp
+      port: 23
+      allowed: false
+
+
+#Our desired firewall configuration is that the default INPUT policy should be DROP
+#all mentioned rules should be DROP
+#rules is a list.rules
+ #├── [0] → port 22
+ #└── [1] → port 23
